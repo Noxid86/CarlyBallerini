@@ -1,0 +1,367 @@
+/*
+Theme Name: CarlyBallerini
+Theme URI:
+Author: Jeremy Dixon
+Author URI: thedixonbuilds.com
+Description:
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: CarlyBallerini
+*/
+* {
+  box-sizing: border-box; }
+
+/* BASE FONT STYLES AND SIZES */
+html {
+  margin: 20px;
+  padding: 10px; }
+
+p {
+  font-size: 16px; }
+
+h1, h2, h3, h4, a {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  font-family: 'Anton', sans-serif;
+  color: black; }
+
+h1 {
+  font-size: 3em;
+  margin-top: 30px; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.125em; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: #f6462e; }
+
+.wrapper {
+  margin: auto;
+  max-width: 1200px; }
+  .wrapper .hero-container .hero-text {
+    margin: 0px;
+    font-family: 'Anton', sans-serif;
+    font-size: 6em; }
+  .wrapper .hero-container .hero-menu {
+    float: left;
+    background-color: white;
+    width: 200px;
+    padding: 0px;
+    padding-right: 15px; }
+    .wrapper .hero-container .hero-menu .title {
+      height: 100px; }
+      .wrapper .hero-container .hero-menu .title .outside {
+        float: right;
+        display: inline-block; }
+    .wrapper .hero-container .hero-menu .sign {
+      margin-top: 50px;
+      background-color: black;
+      height: 100px;
+      width: 90%;
+      text-align: center; }
+      .wrapper .hero-container .hero-menu .sign a {
+        position: relative;
+        bottom: -25px;
+        font-size: 2em;
+        color: white; }
+    .wrapper .hero-container .hero-menu .sign:hover {
+      background-color: #f6462e; }
+    .wrapper .hero-container .hero-menu .sign-1 {
+      transform: rotate(3deg); }
+    .wrapper .hero-container .hero-menu .sign-2 {
+      transform: rotate(-2deg); }
+    .wrapper .hero-container .hero-menu .sign-3 {
+      transform: rotate(4deg); }
+  .wrapper .hero-container .hero-image {
+    width: calc(100% - 200px);
+    float: right;
+    height: 600px;
+    overflow: hidden; }
+    .wrapper .hero-container .hero-image img {
+      width: auto;
+      overflow: hidden;
+      height: 100%; }
+    .wrapper .hero-container .hero-image h1 {
+      margin-left: 15px;
+      position: absolute;
+      color: white; }
+
+.the-body {
+  margin-left: 200px;
+  width: calc( 100% - 200px);
+  max-width: 900px; }
+  .the-body .welcome-message {
+    width: calc( 100% - 300px);
+    float: left;
+    margin: 0px; }
+  .the-body .events_container h3 {
+    position: relative;
+    left: 30px;
+    bottom: 30px; }
+  .the-body .events-title {
+    float: right; }
+  .the-body .shows-splash {
+    background-color: #4ec2b3;
+    width: 280px;
+    float: right;
+    transform: rotate(2deg); }
+  .the-body .the-shows {
+    transform: rotate(-2deg);
+    width: 280px;
+    margin-top: 10px;
+    font-family: 'Anton', sans-serif;
+    float: right; }
+    .the-body .the-shows ol {
+      list-style: none;
+      padding: 0; }
+      .the-body .the-shows ol li {
+        background-color: white;
+        border: 1px solid gray;
+        border-width: 0px 1px 1px 1px; }
+        .the-body .the-shows ol li .tribe-event-date {
+          float: left;
+          width: 100px;
+          background-color: black; }
+          .the-body .the-shows ol li .tribe-event-date h4 {
+            justify-content: center;
+            text-align: center;
+            margin: 5px;
+            color: white; }
+        .the-body .the-shows ol li p {
+          max-width: 90px;
+          max-height: 25px;
+          margin: 5px;
+          float: right;
+          overflow: hidden; }
+        .the-body .the-shows ol li .tribe-event-title {
+          float: left;
+          margin-left: 10px; }
+        .the-body .the-shows ol li .tribe-event-duration {
+          float: right; }
+      .the-body .the-shows ol li:first-child {
+        border-top: 1px solid; }
+  .the-body .media-splash {
+    margin-top: 70px;
+    z-index: -10;
+    background-color: #f6462e;
+    transform: rotate(-3deg); }
+  .the-body .media {
+    transform: rotate(3deg);
+    position: relative;
+    bottom: 70px;
+    margin: 20px 0px 20px 0px; }
+    .the-body .media h1 {
+      margin-bottom: 20px; }
+    .the-body .media .videos {
+      margin: 70px auto 70px auto; }
+    .the-body .media .audio {
+      background-color: black;
+      margin: 70px auto 70px auto;
+      padding: 10px;
+      border: 5px solid black;
+      height: 130px;
+      max-width: 800px; }
+      .the-body .media .audio h3 {
+        color: white;
+        margin: 0px; }
+      .the-body .media .audio .mejs-container, .the-body .media .audio .mejs-container .mejs-controls, .the-body .media .audio .mejs-embed, .the-body .media .audio .mejs-embed body {
+        background: #000000 !important; }
+  .the-body .contact-splash {
+    margin-top: 10px;
+    z-index: -30;
+    background-color: #4ec2b3;
+    transform: rotate(3deg); }
+  .the-body .contact-title {
+    margin-top: 70px;
+    margin-bottom: -20px;
+    text-align: right; }
+  .the-body .contact {
+    padding: 30px;
+    transform: rotate(-3deg); }
+    .the-body .contact input {
+      border: 3px solid black; }
+    .the-body .contact textarea {
+      border: 3px solid black; }
+    .the-body .contact .field_required {
+      color: #f6462e !important; }
+    .the-body .contact .btn {
+      font-family: 'Anton', sans-serif;
+      color: white;
+      background-color: black; }
+
+.footer {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  transform: rotate(0deg); }
+  .footer .icon {
+    padding: 10px;
+    height: 100%;
+    float: left; }
+  .footer h4 {
+    letter-spacing: 1px;
+    float: right;
+    margin: 0px;
+    width: 60%;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    color: white;
+    font-size: 0.5em; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/* Hide Useless Elements */
+.site-description {
+  display: none; }
+
+@media only screen and (max-width: 930px) {
+  .wrapper .hero-container .hero-text {
+    margin-top: -10px; }
+  .wrapper .hero-container .hero-menu {
+    width: 167px; }
+    .wrapper .hero-container .hero-menu .title .outside {
+      font-size: 5em; }
+    .wrapper .hero-container .hero-menu .sign {
+      height: 83px;
+      margin-top: 42px; }
+      .wrapper .hero-container .hero-menu .sign a {
+        font-size: 1.6em; }
+    .wrapper .hero-container .hero-menu .sign-1 {
+      margin-top: 30px; }
+  .wrapper .hero-container .hero-image {
+    height: 500px;
+    width: calc( 100% - 167px); }
+    .wrapper .hero-container .hero-image h1 {
+      font-size: 5em; }
+  .wrapper .the-body {
+    margin-left: 167px;
+    width: calc( 100% - 167px); } }
+@media only screen and (max-width: 800px) {
+  .wrapper .hero-container .hero-text {
+    margin-top: 0px; }
+  .wrapper .hero-container .hero-menu {
+    width: 134px; }
+    .wrapper .hero-container .hero-menu .title .outside {
+      font-size: 4em; }
+    .wrapper .hero-container .hero-menu .sign {
+      height: 76px;
+      width: 100%;
+      margin-top: 26px;
+      margin-left: -10px; }
+      .wrapper .hero-container .hero-menu .sign a {
+        font-size: 1.2em; }
+    .wrapper .hero-container .hero-menu .sign-1 {
+      margin-top: 0px; }
+  .wrapper .hero-container .hero-image {
+    height: 400px;
+    width: calc( 100% - 134px); }
+    .wrapper .hero-container .hero-image h1 {
+      margin-top: 0px;
+      font-size: 4em; }
+  .wrapper .the-body {
+    margin-left: 134px;
+    width: calc( 100% - 134px); } }
+@media only screen and (max-width: 600px) {
+  .wrapper .hero-container .hero-menu {
+    padding: 0px;
+    height: 70px;
+    float: none;
+    width: 100%; }
+    .wrapper .hero-container .hero-menu .title {
+      height: 0px; }
+      .wrapper .hero-container .hero-menu .title .outside {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        font-size: 4em;
+        float: left; }
+    .wrapper .hero-container .hero-menu .sign {
+      margin-top: -5px;
+      margin-left: 10px;
+      display: inline-block;
+      float: right;
+      position: relative;
+      height: 60px;
+      width: 90px; }
+      .wrapper .hero-container .hero-menu .sign a {
+        bottom: -20px;
+        font-size: 1em; }
+  .wrapper .hero-container .hero-image {
+    height: 400px;
+    width: 100%; }
+    .wrapper .hero-container .hero-image h1 {
+      margin-top: 0px;
+      font-size: 4em; }
+  .wrapper .the-body {
+    margin-left: 0px;
+    width: 100%; }
+    .wrapper .the-body .welcome-message {
+      float: none;
+      margin: 0px;
+      width: 100%;
+      padding: 10px; }
+    .wrapper .the-body .shows-splash {
+      float: none; } }
+@media only screen and (max-width: 500px) {
+  .wrapper .hero-container .hero-menu {
+    height: 0px; }
+    .wrapper .hero-container .hero-menu .sign {
+      height: 45px;
+      width: 65px; }
+      .wrapper .hero-container .hero-menu .sign a {
+        letter-spacing: 1px;
+        font-size: 0.8em;
+        bottom: -10px; }
+    .wrapper .hero-container .hero-menu .title .outside {
+      position: absolute;
+      top: 15px;
+      left: 50px;
+      font-size: 3em; }
+  .wrapper .hero-container .hero-image {
+    height: 300px;
+    width: 100%; }
+    .wrapper .hero-container .hero-image h1 {
+      margin-top: 0px;
+      font-size: 3em; } }
+@media only screen and (max-width: 400px) {
+  html {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  .wrapper .hero-container .hero-menu .sign {
+    height: 40px;
+    width: 55px; }
+    .wrapper .hero-container .hero-menu .sign a {
+      letter-spacing: 1px;
+      font-size: 0.8em;
+      bottom: -10px; }
+  .wrapper .hero-container .hero-menu .title .outside {
+    position: absolute;
+    top: 15px;
+    left: 34px;
+    font-size: 3em; }
+  .wrapper .hero-container .hero-image {
+    height: 300px;
+    width: 100%; }
+    .wrapper .hero-container .hero-image h1 {
+      margin-top: 0px;
+      font-size: 3em; } }
+
+/*# sourceMappingURL=style.css.map */
